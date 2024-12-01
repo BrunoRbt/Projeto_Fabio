@@ -15,13 +15,18 @@
 
         <main> 
             <div class="form-group">
-                <label for="url">URL do Vídeo:</label>
                 <div class="input-wrapper">
                     <i class="fas fa-link"></i>
                     <input type="text" id="url" name="url" placeholder="Cole a URL do vídeo aqui">
                 </div>
                 <button onclick="transcrever()" id="btn-transcrever">
-                    <i class="fas fa-microphone"></i> Transcrever
+                  <div class="svg-wrapper">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                      <path fill="none" d="M0 0h24v24H0z"></path>
+                      <path fill="currentColor" d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm-5.657-4.143a.5.5 0 0 1 .707 0l4.95-4.95a.5.5 0 0 1 .707.707l-4.95 4.95a.5.5 0 0 1-.707 0l-4.95-4.95a.5.5 0 0 1 0-.707l4.95-4.95z"></path>
+                    </svg>
+                  </div>
+                  <span>Transcrever</span>
                 </button>
             </div>
 
@@ -33,13 +38,18 @@
             </div>
 
             <div class="form-group">
-                <label for="pergunta">Pergunta:</label>
                 <div class="input-wrapper">
                     <i class="fas fa-question"></i>
                     <input type="text" id="pergunta" name="pergunta" placeholder="Faça uma pergunta sobre o vídeo">
                 </div>
                 <button onclick="perguntar()" id="btn-perguntar">
-                    <i class="fas fa-search"></i> Perguntar
+                  <div class="svg-wrapper">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                      <path fill="none" d="M0 0h24v24H0z"></path>
+                      <path fill="currentColor" d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm-5.657-4.143a.5.5 0 0 1 .707 0l4.95-4.95a.5.5 0 0 1 .707.707l-4.95 4.95a.5.5 0 0 1-.707 0l-4.95-4.95a.5.5 0 0 1 0-.707l4.95-4.95z"></path>
+                    </svg>
+                  </div>
+                  <span>Perguntar</span>
                 </button>
             </div>
 
