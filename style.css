@@ -3,7 +3,7 @@ body {
     font-family: 'Arial', sans-serif; 
     background-color: #fff; 
     margin: 0;
-    padding: 20px; 
+    padding: 20px 20px 20px 20px; /* Adicionado padding-top */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -179,8 +179,7 @@ body {
     display: inline-block;
     width: 3.5em;
     height: 2em;
-    margin-top: 20px; 
-    align-self: center; 
+    align-self: flex-start; /* Alinha o botão ao topo */
   }
   
   .switch input {
@@ -241,4 +240,11 @@ body {
   
   .dark-mode button:hover {
     background-color: #007bff; /* Cor de fundo do botão original */
+  }
+  
+  header {
+    display: flex; /* Ativando o Flexbox no header */
+    justify-content: space-between; /* Distribui o espaço entre os elementos */
+    align-items: center; /* Alinha os elementos verticalmente ao centro */
+    width: 100%; /* Garante que o header ocupe toda a largura do container */
   }
