@@ -1,7 +1,7 @@
 function transcrever() {
     var url = document.getElementById("url").value;
   
-    fetch('/transcrever', {
+    fetch('https://us-central1-bruno-test-autenticare.cloudfunctions.net/transcrever-responder/transcrever', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -14,7 +14,8 @@ function transcrever() {
     })
     .catch(error => {
       console.error('Erro ao transcrever:', error);
-      // Exibir mensagem de erro na interface
+      // Exibir mensagem de erro na interface (opcional)
+      alert("Ocorreu um erro ao transcrever o vídeo. Por favor, tente novamente."); 
     });
   }
   
@@ -22,7 +23,7 @@ function transcrever() {
     var url = document.getElementById("url").value;
     var pergunta = document.getElementById("pergunta").value;
   
-    fetch('/perguntar', {
+    fetch('https://us-central1-bruno-test-autenticare.cloudfunctions.net/transcrever-responder/perguntar', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -35,6 +36,7 @@ function transcrever() {
     })
     .catch(error => {
       console.error('Erro ao perguntar:', error);
-      // Exibir mensagem de erro na interface
+      // Exibir mensagem de erro na interface (opcional)
+      alert("Ocorreu um erro ao fazer a pergunta. Por favor, tente novamente.");
     });
   }
