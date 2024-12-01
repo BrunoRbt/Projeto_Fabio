@@ -1,8 +1,85 @@
-/* Estilos básicos para a página (opcional) */
+/* Estilos gerais */
 body {
-    font-family: sans-serif;
+    font-family: 'Arial', sans-serif; 
+    background-color: #fff; 
+    margin: 0;
+    padding: 20px; /* Adicionei padding ao body para espaçamento geral */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
   }
   
-  #transcricao, #resposta {
-    margin-top: 20px;
+  .container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    text-align: center;
+  }
+  
+  h1 {
+    color: #333; 
+    font-size: 2em;
+    margin-bottom: 30px; /* Aumentei o espaçamento abaixo do título */
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px; /* Adicionei espaçamento entre os grupos de formulário */
+  }
+  
+  .input-wrapper {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 0 10px; 
+    margin-bottom: 15px; /* Adicionei espaçamento entre o input e o botão */
+  }
+  
+  .input-wrapper i {
+    margin-right: 10px; 
+    color: #555; 
+  }
+  
+  .input-wrapper input[type="text"] {
+    flex-grow: 1;
+    padding: 10px 0; 
+    border: none; 
+    margin: 0; 
+  }
+  
+  button {
+    background-color: #007bff; 
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.1em;
+    margin-top: 10px; /* Adicionado espaçamento acima do botão */
+  }
+  
+  button:hover {
+      background-color: #0056b3;
+  }
+  
+  /* loader  */
+  .loader {
+      border: 8px solid #f3f3f3; /* Cor da borda mais clara */
+      border-radius: 50%;
+      border-top: 8px solid #3498db; /* Cor da animação - azul */
+      width: 40px;
+      height: 40px;
+      animation: spin 2s linear infinite;
+      display: none;
+      margin: 20px auto;
+  }
+  
+  @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
   }

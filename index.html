@@ -1,36 +1,56 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
-  <title>Transcrição de Vídeos</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transcrição de Vídeos com IA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Transcreva e faça perguntas sobre vídeos do YouTube!</h1>
+    <div class="container">
+        <header> 
+            <h1>Transcreva e explore vídeos do YouTube!</h1>
+        </header>
 
-  <div>
-    <label for="url">URL do Vídeo:</label>
-    <input type="text" id="url" name="url">
-  </div>
+        <main> 
+            <div class="form-group">
+                <label for="url">URL do Vídeo:</label>
+                <div class="input-wrapper">
+                    <i class="fas fa-link"></i>
+                    <input type="text" id="url" name="url" placeholder="Cole a URL do vídeo aqui">
+                </div>
+                <button onclick="transcrever()" id="btn-transcrever">
+                    <i class="fas fa-microphone"></i> Transcrever
+                </button>
+            </div>
 
-  <button onclick="transcrever()">Transcrever</button>
+            <div id="loader" class="loader"></div> 
 
-  <div id="transcricao">
-    <h2>Transcrição:</h2>
-    <p id="texto-transcricao"></p>
-  </div>
+            <div id="transcricao">
+                <h2>Transcrição:</h2>
+                <div id="texto-transcricao"></div> 
+            </div>
 
-  <div>
-    <label for="pergunta">Pergunta:</label>
-    <input type="text" id="pergunta" name="pergunta">
-  </div>
+            <div class="form-group">
+                <label for="pergunta">Pergunta:</label>
+                <div class="input-wrapper">
+                    <i class="fas fa-question"></i>
+                    <input type="text" id="pergunta" name="pergunta" placeholder="Faça uma pergunta sobre o vídeo">
+                </div>
+                <button onclick="perguntar()" id="btn-perguntar">
+                    <i class="fas fa-search"></i> Perguntar
+                </button>
+            </div>
 
-  <button onclick="perguntar()">Fazer Pergunta</button>
+            <div id="resposta">
+                <h2>Resposta:</h2>
+                <p id="texto-resposta"></p>
+            </div>
+       </main> 
 
-  <div id="resposta">
-    <h2>Resposta:</h2>
-    <p id="texto-resposta"></p>
-  </div>
+    </div>
 
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
