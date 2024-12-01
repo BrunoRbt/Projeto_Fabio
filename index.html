@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Transcrição de Vídeos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Transcreva e faça perguntas sobre vídeos do YouTube!</h1>
+
+  <div>
+    <label for="url">URL do Vídeo:</label>
+    <input type="text" id="url" name="url">
+  </div>
+
+  <button onclick="transcrever()">Transcrever</button>
+
+  <div id="transcricao">
+    <h2>Transcrição:</h2>
+    <p id="texto-transcricao"></p>
+  </div>
+
+  <div>
+    <label for="pergunta">Pergunta:</label>
+    <input type="text" id="pergunta" name="pergunta">
+  </div>
+
+  <button onclick="perguntar()">Fazer Pergunta</button>
+
+  <div id="resposta">
+    <h2>Resposta:</h2>
+    <p id="texto-resposta"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

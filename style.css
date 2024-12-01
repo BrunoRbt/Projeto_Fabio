@@ -1,0 +1,8 @@
+/* Estilos básicos para a página (opcional) */
+body {
+    font-family: sans-serif;
+  }
+  
+  #transcricao, #resposta {
+    margin-top: 20px;
+  }
